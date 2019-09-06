@@ -173,7 +173,7 @@ inline char* Prettify(char* buffer, int length, int k, int maxDecimalPlaces) {
         else
             return &buffer[length + 1];
     }
-    else if (-6 < kk && kk <= 0) {
+    else if (-8 < kk && kk <= 0) {
         // 1234e-6 -> 0.001234
         const int offset = 2 - kk;
         std::memmove(&buffer[offset], &buffer[0], static_cast<size_t>(length));
